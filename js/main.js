@@ -44,7 +44,7 @@ class HardestGame {
     window.requestAnimationFrame(this.draw());
   }
   draw() {
-    if (this.player.level === 4) {
+    if (this.player.level === 5) {
       this.context.clearRect(0, 0, innerWidth, innerHeight)
       this.player.draw();
       this.player.move();
@@ -83,7 +83,7 @@ class HardestGame {
       window.requestAnimationFrame(this.draw);
       this.player.win();
     }
-    if (this.player.level === 1) {
+    if (this.player.level === 4) {
       this.context.clearRect(0, 0, innerWidth, innerHeight)
       this.player.draw();
       this.player.move();
@@ -140,7 +140,7 @@ class HardestGame {
       window.requestAnimationFrame(this.draw);
       this.player.win();
     }
-    if (this.player.level === 5) {
+    if (this.player.level === 1) {
       this.context.clearRect(0, 0, innerWidth, innerHeight)
       this.player.draw();
       this.player.move();
