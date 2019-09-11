@@ -28,7 +28,7 @@ class HardestGame {
     this.cross1 = new Cross(context, 600, 200, 185, 0.05, this.deathCounter)
     this.cross2 = new Cross(context, 400, 200, 200, 0.05, this.deathCounter)
     this.verticalBall = new VerticalBall(context, 180, 300, 30, 15, this.deathCounter);
-    this.verticalBall1 = new VerticalBall(context, 100, 300, 30, 15, this.deathCounter);
+    this.verticalBall1 = new VerticalBall(context, 620, 300, 30, 15, this.deathCounter);
     this.verticalBall2 = new VerticalBall(context, 120, 300, 15, 15, this.deathCounter);
     this.verticalBall3 = new VerticalBall(context, 200, 300, 15, 15, this.deathCounter);
     this.verticalBall4 = new VerticalBall(context, 280, 300, 15, 15, this.deathCounter);
@@ -44,7 +44,7 @@ class HardestGame {
     window.requestAnimationFrame(this.draw());
   }
   draw() {
-    if (this.player.level === 5) {
+    if (this.player.level === 4) {
       this.context.clearRect(0, 0, innerWidth, innerHeight)
       this.player.draw();
       this.player.move();
@@ -83,7 +83,7 @@ class HardestGame {
       window.requestAnimationFrame(this.draw);
       this.player.win();
     }
-    if (this.player.level === 4) {
+    if (this.player.level === 1) {
       this.context.clearRect(0, 0, innerWidth, innerHeight)
       this.player.draw();
       this.player.move();
@@ -140,7 +140,7 @@ class HardestGame {
       window.requestAnimationFrame(this.draw);
       this.player.win();
     }
-    if (this.player.level === 1) {
+    if (this.player.level === 5) {
       this.context.clearRect(0, 0, innerWidth, innerHeight)
       this.player.draw();
       this.player.move();
