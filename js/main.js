@@ -44,6 +44,10 @@ class HardestGame {
     window.requestAnimationFrame(this.draw());
   }
   draw() {
+    if (this.player.level === 6) {
+      this.context.clearRect(0, 0, innerWidth, innerHeight)
+      this.deathCounter.drawWin();
+    }
     if (this.player.level === 5) {
       this.context.clearRect(0, 0, innerWidth, innerHeight)
       this.player.draw();
@@ -150,7 +154,7 @@ class HardestGame {
       this.horizontaleBall3.draw();
       this.horizontaleBall4.draw();
       this.horizontaleBall5.draw();
-      this.deathCounter.draw();;
+      this.deathCounter.draw();
       this.win.draw();
       this.horizontaleBall.checkCollision(this.player);
       this.horizontaleBall1.checkCollision(this.player);

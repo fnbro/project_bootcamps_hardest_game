@@ -47,7 +47,7 @@ class Player {
 	}
 	win() {
 		if (this.xPos > 700 && this.yPos > 300 && this.level === 5) {
-			location.replace("./winningscreen.html");
+			this.level += 1;
 		}
 		if (this.xPos > 700 && this.yPos > 300 && this.level === 4) {
 			this.level += 1;

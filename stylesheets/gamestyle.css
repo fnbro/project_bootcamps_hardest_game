@@ -19,3 +19,8 @@ canvas {
     position: relative;
     left: 560px;
 }
+#win {
+    width: 1px;
+    height: 1px;
+  background-size: contain;
+}
