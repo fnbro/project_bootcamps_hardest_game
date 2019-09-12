@@ -6,24 +6,27 @@
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 50px;
 }
 div.Vorschau {
-    margin-left: 30%;
-    width:1000px;
-    height:570px;
+    margin-left: auto;
+    margin-right: auto;
+    width:700px;
+    height:380px;
     overflow:hidden;
 
  }
  div.Vorschau img {
-    width: 1000px;
-    height: 600px; 
+    width: 700px;
+    height: 400px; 
+    left: auto;
+    top: auto;
     }  
 a {
   position: fixed;
-  top: 55%;
+  top: auto;
   left: 48%;
-  font-size: 80px;
+  font-size: 50px;
   text-decoration: none;
 }
 .flex-container {
