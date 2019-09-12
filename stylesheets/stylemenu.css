@@ -28,6 +28,12 @@ a {
   left: 48%;
   font-size: 50px;
   text-decoration: none;
+  color: steelblue;
+}
+#control {
+    position: fixed;
+    left: 43%;
+    font-size: 20px;
 }
 .flex-container {
     display: flex;
