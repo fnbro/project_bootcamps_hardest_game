@@ -2,7 +2,7 @@ let canvas = document.querySelector("canvas");
 
 class HardestGame {
   constructor(context) {
-    this.player = new Player(context, 1);
+    this.player = new Player(context, 3);
     this.deathCounter = new DeathCounter(context, 0);
     this.horizontaleBall = new HorizontaleBall(context, 20, 100, 30, 15, this.deathCounter);
     this.horizontaleBall1 = new HorizontaleBall(context, 780, 140, 30, 15, this.deathCounter);
@@ -20,9 +20,9 @@ class HardestGame {
     this.bouncingBall1 = new BouncingBall(context, 500, 150, 15, this.deathCounter);
     this.bouncingBall2 = new BouncingBall(context, 200, 200, 15, this.deathCounter);
     this.bouncingBall3 = new BouncingBall(context, 300, 280, 15, this.deathCounter);
-    this.bouncingBall4 = new BouncingBall(context, 350, 350, 15, this.deathCounter);
-    this.bouncingBall5 = new BouncingBall(context, 550, 100, 15, this.deathCounter);
-    this.bouncingBall6 = new BouncingBall(context, 600, 300, 15, this.deathCounter);
+    this.bouncingBall4 = new BouncingBall(context, 650, 20, 15, this.deathCounter);
+    this.bouncingBall5 = new BouncingBall(context, 750, 150, 15, this.deathCounter);
+    this.bouncingBall6 = new BouncingBall(context, 780, 100, 15, this.deathCounter);
     this.bouncingBall7 = new BouncingBall(context, 600, 300, 30, this.deathCounter);
     this.cross = new Cross(context, 200, 200, 185, 0.05, this.deathCounter)
     this.cross1 = new Cross(context, 600, 200, 185, 0.05, this.deathCounter)
