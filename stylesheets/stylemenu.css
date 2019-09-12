@@ -8,12 +8,21 @@
 h1 {
     font-size: 80px;
 }
+div.Vorschau {
+    margin-left: 30%;
+    width:1000px;
+    height:570px;
+    overflow:hidden;
 
+ }
+ div.Vorschau img {
+    width: 1000px;
+    height: 600px; 
+    }  
 a {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  right: 50%;
+  top: 55%;
+  left: 48%;
   font-size: 80px;
   text-decoration: none;
 }
