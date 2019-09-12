@@ -10,7 +10,7 @@ class Win {
 
         this.context.save();
         this.context.fillStyle = "rgba(0, 102, 34, 0.5)"
-        this.context.fillRect(720, 320, 120, 80);
+        this.context.fillRect(720, 320, 130, 85);
         this.context.restore();
         
     }
