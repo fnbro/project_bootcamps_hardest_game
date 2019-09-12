@@ -12,7 +12,7 @@ canvas {
     margin-top: auto;
     margin-bottom: auto;
     display: block; 
-    background-image: url("Fliesen1.jpg"); 
+    background-image: url("../images/Fliesen.jpg"); 
     background-size:cover;
 }
 #Death {
