@@ -22,6 +22,9 @@ div.Vorschau {
     left: auto;
     top: auto;
     }  
+    .useless {
+        color: darksalmon;
+    }
 a {
   position: fixed;
   top: auto;
