@@ -2,7 +2,7 @@ let canvas = document.querySelector("canvas");
 
 class HardestGame {
   constructor(context) {
-    this.player = new Player(context, 3);
+    this.player = new Player(context, 1);
     this.deathCounter = new DeathCounter(context, 0);
     this.horizontaleBall = new HorizontaleBall(context, 20, 100, 30, 15, this.deathCounter);
     this.horizontaleBall1 = new HorizontaleBall(context, 780, 140, 30, 15, this.deathCounter);
