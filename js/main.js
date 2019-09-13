@@ -10,11 +10,11 @@ class HardestGame {
     this.horizontaleBall3 = new HorizontaleBall(context, 780, 220, 30, 15, this.deathCounter);
     this.horizontaleBall4 = new HorizontaleBall(context, 20, 260, 30, 15, this.deathCounter);
     this.horizontaleBall5 = new HorizontaleBall(context, 780, 300, 30, 15, this.deathCounter);
-    this.horizontaleBall6 = new HorizontaleBall(context, 20, 90, 10, 15, this.deathCounter);
+    this.horizontaleBall6 = new HorizontaleBall(context, 20, 90, 20, 15, this.deathCounter);
     this.horizontaleBall7 = new HorizontaleBall(context, 780, 140, 10, 15, this.deathCounter);
     this.horizontaleBall8 = new HorizontaleBall(context, 20, 190, 10, 15, this.deathCounter);
     this.horizontaleBall9 = new HorizontaleBall(context, 780, 240, 10, 15, this.deathCounter);
-    this.horizontaleBall10 = new HorizontaleBall(context, 20, 300, 10, 15, this.deathCounter);
+    this.horizontaleBall10 = new HorizontaleBall(context, 20, 300, 20, 15, this.deathCounter);
     this.horizontaleBall11 = new HorizontaleBall(context, 400, 360, 15, 32, this.deathCounter);
     this.bouncingBall = new BouncingBall(context, 100, 100, 15, this.deathCounter);
     this.bouncingBall1 = new BouncingBall(context, 500, 150, 15, this.deathCounter);
@@ -36,8 +36,8 @@ class HardestGame {
     this.verticalBall6 = new VerticalBall(context, 440, 300, 15, 15, this.deathCounter);
     this.verticalBall7 = new VerticalBall(context, 520, 300, 15, 15, this.deathCounter);
     this.verticalBall8 = new VerticalBall(context, 600, 300, 15, 15, this.deathCounter);
-    this.verticalBall9 = new VerticalBall(context, 685, 300, 15, 15, this.deathCounter);
-    this.verticalBall10 = new VerticalBall(context, 760, 280, 15, 32, this.deathCounter);
+    this.verticalBall9 = new VerticalBall(context, 680, 300, 5, 15, this.deathCounter);
+    this.verticalBall10 = new VerticalBall(context, 755, 280, 5, 32, this.deathCounter);
     this.win = new Win(context);
     this.context = context;
     this.draw = this.draw.bind(this);
@@ -82,7 +82,7 @@ class HardestGame {
       this.verticalBall6.checkCollision(this.player);
       this.verticalBall7.checkCollision(this.player);
       this.verticalBall8.checkCollision(this.player);
-      this.verticalBall9.checkCollision(this.player);
+      this.verticalBall9.checkCollision(this.player)
       this.verticalBall10.checkCollision(this.player);
       window.requestAnimationFrame(this.draw);
       this.player.win();
