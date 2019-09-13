@@ -8,6 +8,9 @@
 h1 {
     font-size: 50px;
 }
+#creator {
+    font-size: 15px;
+}
 div.Vorschau {
     margin-left: auto;
     margin-right: auto;
