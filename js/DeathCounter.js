@@ -12,7 +12,7 @@ class DeathCounter {
     }
     drawWin() {
 
-        this.context.drawImage(this.img, 0, 0, 800, 800)
+        this.context.drawImage(this.img, 0, 0, 1000, 1000)
 
         this.context.font = "50px Arial";
         this.context.fillText(`You won!`, 200, 100);
