@@ -44,7 +44,7 @@ class HardestGame {
     window.requestAnimationFrame(this.draw());
   }
   draw() {
-    if (this.player.level === 6) {
+    if (this.player.level === 6) {ö
       this.context.clearRect(0, 0, innerWidth, innerHeight)
       this.deathCounter.drawWin();
     }
