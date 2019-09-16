@@ -5,6 +5,7 @@ class VerticalBall {
         this.dy = dy;
         this.radius = radius;
         this.context = context;
+        this.soundEfx = document.getElementById("soundEfx");
         this.draw = this.draw.bind(this);
         this.checkCollision = this.checkCollision.bind(this);
         this.deathCounter = deathCounter;
@@ -45,6 +46,7 @@ class VerticalBall {
             player.xPos = 20;
             player.yPos = 40;
             this.deathCounter.death += 1;
+            this.soundEfx.play();
         }
         else return false;
     }

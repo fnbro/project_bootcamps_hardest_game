@@ -4,6 +4,7 @@ class HorizontaleBall {
     this.yPos = yPos;
     this.dx = dx;
     this.radius = radius;
+    this.soundEfx = document.getElementById("soundEfx");
     this.context = context;
     this.draw = this.draw.bind(this);
     this.checkCollision = this.checkCollision.bind(this);
@@ -46,6 +47,7 @@ class HorizontaleBall {
       player.xPos = 20;
       player.yPos = 40;
       this.deathCounter.death += 1;
+      this.soundEfx.play();
     }
     else return false;
   }

@@ -33,10 +33,10 @@ class Player {
 	}
 	move() {
 		document.onkeydown = e => {
-			if (e.keyCode === 37) { this.vx = -5; }
-			if (e.keyCode === 39) { this.vx = 5; }
-			if (e.keyCode === 38) { this.vy = -5; }
-			if (e.keyCode === 40) { this.vy = 5; }
+			if (e.keyCode === 37) { this.vx = -3; }
+			if (e.keyCode === 39) { this.vx = 3; }
+			if (e.keyCode === 38) { this.vy = -3; }
+			if (e.keyCode === 40) { this.vy = 3; }
 		}
 		document.onkeyup = e => {
 			if (e.keyCode === 37 && this.vx < 0) { this.vx = 0; }

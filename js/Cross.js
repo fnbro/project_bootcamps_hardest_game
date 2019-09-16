@@ -6,6 +6,7 @@ class Cross {
     this.angle = 0;
     this.speedAngle = speedAngle;
     this.deathCounter = deathCounter;
+    this.soundEfx = document.getElementById("soundEfx");
     this.context = context;
   }
   draw() {
@@ -50,6 +51,7 @@ class Cross {
           player.xPos = 20;
           player.yPos = 40;
           this.deathCounter.death += 1;
+          this.soundEfx.play();
         }
       }
     }
