@@ -167,9 +167,32 @@ class HardestGame {
     }
     this.player.update();
   }
+    enableMute() { 
+    muteEfx.muted = true;
+  } 
 }
 function distance(a, b) {
   return Math.sqrt((a.xPos - b.xPos) ** 2 + (a.yPos - b.yPos) ** 2);
+} 
+let muteEfx = document.getElementById("audio");
+
+function enableMute() { 
+  muteEfx.muted = true;
 }
+function disableMute() { 
+  muteEfx.muted = false;
+}
+
+let muteSoundEffects = document.getElementById("soundEfx")
+let muteSoundEffectsWin = document.getElement
+
+function enableMuteSoundEfx() { 
+  muteSoundEffects.muted = true;
+}
+function disableMuteSoundEfx() { 
+  muteSoundEffects.muted = false;
+
+}
+
 
 let hardestGame = new HardestGame(canvas.getContext("2d"));

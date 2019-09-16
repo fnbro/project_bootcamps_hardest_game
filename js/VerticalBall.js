@@ -50,4 +50,11 @@ class VerticalBall {
         }
         else return false;
     }
+    enableMute() { 
+        this.soundEfx.volume = true;
+      } 
+      
+     disableMute() { 
+        this.soundEfx.volume = false;
+      } 
 }
