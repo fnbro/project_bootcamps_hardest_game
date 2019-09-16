@@ -22,3 +22,15 @@ canvas {
     height: 1px;
     background-size: contain;
 }
+#mute {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    background-color: #4CAF50;
+}
+#muteoff {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    background-color: #4CAF50;
+}

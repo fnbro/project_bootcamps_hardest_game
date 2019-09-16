@@ -183,16 +183,6 @@ function disableMute() {
   muteEfx.muted = false;
 }
 
-let muteSoundEffects = document.getElementById("soundEfx")
-let muteSoundEffectsWin = document.getElement
-
-function enableMuteSoundEfx() { 
-  muteSoundEffects.muted = true;
-}
-function disableMuteSoundEfx() { 
-  muteSoundEffects.muted = false;
-
-}
 
 
 let hardestGame = new HardestGame(canvas.getContext("2d"));
