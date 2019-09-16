@@ -167,9 +167,6 @@ class HardestGame {
     }
     this.player.update();
   }
-    enableMute() { 
-    muteEfx.muted = true;
-  } 
 }
 function distance(a, b) {
   return Math.sqrt((a.xPos - b.xPos) ** 2 + (a.yPos - b.yPos) ** 2);
