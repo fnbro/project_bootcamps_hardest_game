@@ -1,6 +1,7 @@
 class DeathCounter {
     constructor(context, death) {
         this.death = death;
+        this.winEfx = document.getElementById("winEfx");
         this.context = context;
         this.img = document.getElementById("win");
     }
@@ -11,7 +12,7 @@ class DeathCounter {
         this.context.fill();
     }
     drawWin() {
-
+        this.winEfx.play();
         this.context.drawImage(this.img, 0, 0, 1000, 1000)
 
         this.context.font = "50px Arial";

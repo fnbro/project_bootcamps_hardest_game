@@ -82,7 +82,7 @@ class HardestGame {
       this.verticalBall6.checkCollision(this.player);
       this.verticalBall7.checkCollision(this.player);
       this.verticalBall8.checkCollision(this.player);
-      this.verticalBall9.checkCollision(this.player)
+      this.verticalBall9.checkCollision(this.player);
       this.verticalBall10.checkCollision(this.player);
       window.requestAnimationFrame(this.draw);
       this.player.win();
