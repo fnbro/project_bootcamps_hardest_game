@@ -1,4 +1,5 @@
 let canvas = document.querySelector("canvas");
+let muteEfx = document.getElementById("audio");
 
 class HardestGame {
   constructor(context) {
@@ -38,7 +39,6 @@ class HardestGame {
     this.verticalBall8 = new VerticalBall(context, 600, 300, 10, 15, this.deathCounter);
     this.verticalBall9 = new VerticalBall(context, 680, 300, 10, 15, this.deathCounter);
     this.verticalBall10 = new VerticalBall(context, 755, 280, 5, 32, this.deathCounter);
-    this.muteEfx = document.getElementById("audio");
     this.win = new Win(context);
     this.context = context;
     this.draw = this.draw.bind(this);
@@ -168,16 +168,15 @@ class HardestGame {
     }
     this.player.update();
   }
-  enableMute() { 
-    this.muteEfx.muted = true;
-  }
-  disableMute() { 
-    this.muteEfx.muted = false;
-  }
 }
 function distance(a, b) {
   return Math.sqrt((a.xPos - b.xPos) ** 2 + (a.yPos - b.yPos) ** 2);
 } 
-
+function enableMute() { 
+  muteEfx.muted = true;
+}
+function disableMute() { 
+  muteEfx.muted = false;
+}
 
 let hardestGame = new HardestGame(canvas.getContext("2d"));
